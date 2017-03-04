@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family-Open+Sans);
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans";
+}
+
+body{
+
+/*background-image: url("EntregaDWS/fondo.jpg");*/
+background-color: #81F79F;
+}
+header{
+width: auto;
+height: 60px;
+background: #49A8FA;
+display: flex;
+/*con esto pongo el menu al lado izquierdo*/
+justify-content: flex-end;
+
+}
+
+header ul{
+	display: flex;
+	list-style: none;
+}
+
+header ul li a{
+display: block;
+padding: 20px 20px;
+color: #fff;
+text-decoration: none;
+
+}
+header ul ul{
+position: absolute;
+top:60px;
+display: block;
+background: #346998;
+transform: translateX(60%);
+opacity: 0;
+transition: all .6s;
+}
+
+header ul li a span{
+transition: all .6s;
+
+}
+
+header ul li a:hover span{
+
+	transform: translateY(10px);
+	opacity: 0;
+}
+
+header ul li:hover ul{
+	opacity: 1;
+	transform: translateX(0%);
+}
+#menu li:hover{
+
+	background:#a3cd39;
+	text-shadow: 0 0 2px #000;
+}
